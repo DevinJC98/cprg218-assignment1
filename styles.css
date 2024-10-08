@@ -69,6 +69,15 @@ aside
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+aside h3
+{
+    font-size: 4vw;
+}
+aside p
+{
+    font-size: 2vw;
+}
+
 footer
 {
     background-color: #d9043d;
