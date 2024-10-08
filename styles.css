@@ -3,6 +3,11 @@
     box-sizing:border-box;
 }
 
+header
+{
+    background-color: #120303;
+}
+
 @media screen and (max-width:768px)
 {
 
