@@ -53,11 +53,11 @@ figure img
 figcaption h2
 {
     color:#120323;
-    font-size: 5vw;
+    font-size: 1.5rem;
 }
 figcaption p
 {
-    font-size: 4vw;
+    font-size: 1rem;
 }
 
 
@@ -71,11 +71,11 @@ aside
 
 aside h3
 {
-    font-size: 5vw;
+    font-size: 1.5rem;
 }
 aside p
 {
-    font-size: 4vw;
+    font-size: 1rem;
 }
 
 footer
