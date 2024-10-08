@@ -53,7 +53,13 @@ figure img
 figcaption h2
 {
     color:#120323;
+    font-size: 4vw;
 }
+figcaption p
+{
+    font-size: 2vw;
+}
+
 
 aside
 {
