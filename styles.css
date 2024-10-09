@@ -5,19 +5,17 @@
 
 body
 {
-    display: flex;
-    flex-direction: column;
     margin:0;
-    justify-content: center;
 }
 
+/* header information */
 header
 {
     background-color: #120323;
     min-width: 100vw;
     justify-content: center;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
 }
 header img
 {
@@ -29,38 +27,43 @@ header h1
 {
     color: #97bf04;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 5vw;
+    font-size: 1.5em;
+    margin: 5%;
 }
 
-main
-{
-    justify-content: center;
-    
-}
-figure
+/* puffin image & text */
+#container
 {
     justify-content: center;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+ 
 figure img
 {
     min-width: 100%;
     border: solid #d9043d 3px;
 }
+
+figcaption
+{
+    max-width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 figcaption h2
 {
     color:#120323;
-    font-size: 1.5rem;
+    font-size: 1.2em;
 }
+
 figcaption p
 {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
-
+/* sidebar*/
 aside
 {
     background-color: #97bf04;
@@ -71,26 +74,102 @@ aside
 
 aside h3
 {
-    font-size: 1.5rem;
-}
-aside p
-{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
+aside p
+{
+    font-size: 1em;
+}
+
+/* footer */
 footer
 {
     background-color: #d9043d;
-    padding: 2%;
+    padding: 3%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 
-@media screen and (max-width:1000px) 
+/*m= Media Query for screens between 769-1000px; */
+@media screen and (min-width: 769px) 
 {
+    header 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    figure
+    {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figcaption
+    {
+        max-width: 60%;
+        margin-left: 2%;
+    }
+
+    figure img
+    {  
+        min-width: 300px;
+        max-width: 300px;  
+    }
     
 }
 
+/* Media Query for screens above 1000px */
 @media screen and (min-width:1001px)
 {
+    #container
+    {
+        flex-wrap: nowrap;
+        margin:0;
+        align-items:normal;
+        padding-top: 2%;
+        padding-bottom: 2%; 
+    }
 
+    figure
+    {
+        max-width: 100%;
+    }
+   
+    figcaption
+    {
+        max-width: 40vw;  
+        min-height: 300px;
+    }
+    
+    aside
+    {
+        max-width: 33%;
+        max-height: 400px;
+        margin:0px;
+        padding: 2%;
+    }
+
+    aside h3, figcaption h2
+    {
+        font-size: 18px;
+    }
+
+    aside p, figcaption p
+    {
+        font-size: 14px;
+    }
+    
+    footer
+    {
+        min-width: 100vw;
+        
+    }
+    
+   
 }
