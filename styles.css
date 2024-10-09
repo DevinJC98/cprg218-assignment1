@@ -6,7 +6,7 @@
 body
 {
     margin: 0px;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* header information */
@@ -27,7 +27,6 @@ header img
 header h1
 {
     color: #97bf04;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.5em;
     margin: 5%;
 }
@@ -41,16 +40,21 @@ header h1
     align-items: center;
 }
  
+figure
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 figure img
 {
     max-width: 100%;
-    border: solid #d9043d 3px;
+    border: solid #d9043d 5px;
 }
 
 figcaption
 {
     max-width: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 figcaption h2
@@ -69,7 +73,6 @@ aside
 {
     background-color: #97bf04;
     padding: 2%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-width: 100vw;
 }
 
@@ -88,13 +91,12 @@ footer
 {
     background-color: #d9043d;
     padding: 3%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     margin-top: 3%;
     min-width: 100vw;
 }
 
-/*m= Media Query for screens between 769-1000px; */
+/* Media Query for screens between 769-1000px; */
 @media screen and (min-width: 769px) 
 {
     header 
@@ -113,6 +115,7 @@ footer
     {
         max-width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -121,6 +124,7 @@ footer
     {
         max-width: 60%;
         margin-left: 2%;
+        min-height: 300px;
     }
 
     figure img
@@ -138,7 +142,7 @@ footer
     {
         flex-wrap: nowrap;
         margin:0;
-        align-items:normal;
+        align-items:start;
         padding-top: 2%;
         padding-bottom: 2%; 
     }
@@ -147,12 +151,11 @@ footer
     {
         max-width: 100%;
     }
-   
+
     figcaption
     {
         max-width: 50vw;  
         min-height: 300px;
-
     }
     
     aside
@@ -171,13 +174,6 @@ footer
     aside p, figcaption p
     {
         font-size: 14px;
-    }
-    
-    footer
-    {
-        min-width: 100vw;
-        
-    }
-    
+    }   
    
 }
