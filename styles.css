@@ -5,17 +5,18 @@
 
 body
 {
-    margin:0;
+    margin: 0px;
+
 }
 
 /* header information */
 header
 {
     background-color: #120323;
-    min-width: 100vw;
     justify-content: center;
     text-align: center;
     padding: 2%;
+    margin: 0px;
 }
 header img
 {
@@ -42,7 +43,7 @@ header h1
  
 figure img
 {
-    min-width: 100%;
+    max-width: 100%;
     border: solid #d9043d 3px;
 }
 
@@ -68,8 +69,8 @@ aside
 {
     background-color: #97bf04;
     padding: 2%;
-    margin-bottom: 5%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-width: 100vw;
 }
 
 aside h3
@@ -89,6 +90,8 @@ footer
     padding: 3%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
+    margin-top: 3%;
+    min-width: 100vw;
 }
 
 /*m= Media Query for screens between 769-1000px; */
@@ -100,6 +103,10 @@ footer
         justify-content: center;
         align-items: center;
         padding: 0;
+    }
+    header h1
+    {
+        margin: 2%;
     }
 
     figure
@@ -143,14 +150,15 @@ footer
    
     figcaption
     {
-        max-width: 40vw;  
+        max-width: 50vw;  
         min-height: 300px;
+
     }
     
     aside
     {
-        max-width: 33%;
-        max-height: 400px;
+        min-width: 0px;
+        max-width: 30vw;
         margin:0px;
         padding: 2%;
     }
